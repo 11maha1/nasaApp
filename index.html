@@ -1,0 +1,357 @@
+<html>
+    <head>
+
+    </head>
+    <style>
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+  body{
+    font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+    background: url(img/ground.jpg) no-repeat center center fixed; 
+    letter-spacing: 1.5px;
+    padding: 0%;
+    margin: 0%;
+    background-size: cover;
+    background-position: center;
+}
+     .nav {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 540;
+     }
+        ul {
+            list-style-type: none;
+            display: flex; 
+        }
+        .item{
+            justify-content: space-between;
+            display: flex;
+            margin-left: 620px;
+            padding-top: 20px;
+        }
+        
+        li {
+            padding-top: 40px;
+            margin-left: 20px; 
+            margin-right: 10px;
+        }
+        .logo{
+            margin-left: 80px;
+            margin-top: 40px;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        a:hover {
+            color: blue;
+        }
+        .text{
+            color:#ffffff;
+            font-size: 20px;
+            margin-top: 170px;
+            padding-bottom: 10px;
+            font-weight: 540;
+        }
+        .text2{
+            color:#ffffff;
+            font-size: 20px;
+            padding-bottom: 10px;
+            font-weight: 540;
+       }
+button {
+  font-weight: 540;
+  position: relative;
+  padding: 10px 15px;
+  border-radius: 7px;
+  border: 1px solid rgb(61, 106, 255);
+  font-size: 12px;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  margin-bottom: 250px;
+}
+
+button:hover {
+  background: rgb(61, 106, 255);
+  box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+button:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+button::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+button:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+.sidepic{
+    align-items: left;
+}
+.solar{
+    background-color: #000000;
+}
+.title{
+    margin-top: 160px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    color: #fff;
+    font-size: 27px;
+    align-items: left;
+}
+.solar video{
+    width: 100%;
+    height: 70%;
+    margin-bottom: 240px;
+}
+/* From Uiverse.io by JaydipPrajapati1910 */ 
+#card3 {
+  width: 980px;
+  height: 554px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 15px;
+  background-color: red;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: 14px;
+  position: relative;
+  cursor: pointer;
+  font-weight: 600;
+  transition-duration: .2s;
+  background: linear-gradient(0deg, #000, #272727);
+}
+
+#card3:before, #card3:after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #fb0094, #0000ff, #421046,#170649, #0051ff, #321e3b, 
+		#0000ff, #0f2341,#252d57, #ff0000);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+#card3:after {
+  filter: blur(100px);
+}
+
+#card4 {
+  margin-bottom: 200px;
+  width: 980px;
+  height: 554px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 15px;
+  background-color: red;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: 14px;
+  position: relative;
+  cursor: pointer;
+  font-weight: 600;
+  transition-duration: .2s;
+  background: linear-gradient(0deg, #000, #272727);
+}
+
+#card4:before, #card4:after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #fb0094, #0000ff, #421046,#170649, #0051ff, #321e3b, 
+		#0000ff, #0f2341,#252d57, #ff0000);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+#card4:after {
+  filter: blur(100px);
+}
+#info{
+    font-size: 12px;
+    justify-content: space-between;
+    display: flex;
+    margin: 10px;
+}
+#info img{
+    padding-left: 15px;
+    border-radius: 20px;
+}
+footer{
+    margin-top: 100px;
+    color:#fff;
+}
+.footer{
+    background: url(img/sidepic.png) no-repeat;
+    height: 110px;
+    background-position:center;
+    font-size: 14px;
+    font-weight: 700;
+    padding-top: 200px;
+}
+
+    </style>
+
+    <body>
+    <div class="nav">
+
+<ul>
+    <spam class="logo"> <img src="img/logo.png" height="60px" width="60px"></spam>
+    <!--
+    <spam class="item">
+        <li><a href="https://www.nasa.gov/">NASA</a></li>
+        <li><a href="planets.html">PLANTES</a></li>
+        <li><a href="#card3">GEOMAGNETIC STORMS</a></li>
+    </spam>-->
+</ul>
+</div>
+<center>
+<div class="text">
+    <p>Dive into the Solar Storms<br> Beauty, Power, and Impact! </p>
+</div>
+<button>
+   <a href="SolarPhenomena.html">HERE</a> 
+</button> </center>
+
+</div>
+<!--here the secend -->
+<center>
+<div class="text2">
+    <p>Read about solar storms, and be one of the scientists<br> uncovering the secrets of the universe! </p>
+</div>
+<button>
+   <a href="hitmap.html">HERE</a> 
+</button>
+</center>
+
+<p class="title"> THE SOLAR STORMS </p>
+
+<section class="solar">
+<video src="img/vid.mp4" muted loop autoplay></video>
+</section>
+
+
+    <p class="title"> GEOMAGNETIC STORMS </p>
+<center>
+
+<div id="card3">
+    <p id="info">
+        
+                                                                 ALL ABOUT  GEOMAGNETIC STORMS <br><Br>
+             We’re excited to see your interest in solar storms! <br>
+Let’s take a journey to discover more about these fascinating event  So, what exactly is a solar storm? Well, solar storms are a natural
+partof our Sun's solar cycle, which lasts about 11 years. They occur when the Sun releases massive bursts of energy, known as solar flares
+ and coronal mass ejections (CMEs). These energetic events send out light, energy, and solar material into space.  But how do they happen? 
+ Solar flares are forms of electromagnetic radiation that travel from the Sun at the speed of light, reaching Earth in just over eight minutes.
+  When there’s a strong transfer of energy from the solar wind to the space around Earth, it can trigger a geomagnetic storm.  For instance, in May 2024
+  , a large group of sunspots—thirty times the size of Earth—led to significant geomagnetic events. The Sun's surface was dotted with massive sunspots, 
+  and intense solar flares released streams of plasma. At least seven CMEs impacted Earth, resulting in one of the most powerful solar storms in decades.
+   This not only created stunning auroras but also disrupted satellite communications, GPS systems, and power grids. Some flights even had to reroute to avoid radiation exposure!
+     So, how do these geomagnetic storms affect our atmosphere and beyond? They can disrupt satellites and various electronic devices, including GPS navigation systems. Radio
+      communications might face interference, and as we look to the future, we could see more of these disruptions. On the bright side, enhanced geomagnetic activity also leads 
+      to those breathtaking auroras that light up our skies! While geomagnetic storms can pose significant risks to technology and infrastructure, advances in monitoring and forecasting 
+      have improved our ability to mitigate these effects.
+       <a href="SolarPhenomena.html"><img src="img/sunpic1.png"  height="320px" width="340px"></a>
+        </p>
+</div></center>
+<!--sec 2-->
+<p class="title"> THE IMPACT ON PLANETS</p>
+<center>
+<div id="card4">
+    <p id="info">
+        
+                                                                 ALL ABOUT  GEOMAGNETIC STORMS <br><Br>
+                                                                    Welcome to an exciting world of space where the Sun interacts with planets in unexpected ways! On this page, we will dive into the phenomenon of solar storms—massive explosions of energy and matter released by the Sun into space. You’ll learn how these storms affect different planets, from the glittering rings of Saturn to the red surface of Mars.
+
+We will discuss how solar storms impact the atmospheres of planets, leading to stunning phenomena like the northern and southern lights. We’ll also explore how solar storms can disrupt communication systems and satellites here on Earth.
+
+Join us as we explore how solar storms are formed, how they interact with the magnetic fields of planets, and how they influence daily life in space and on our planet. Get ready for a journey filled with fascinating information and cosmic surprises. Click below to dive deep into this captivating topic!
+             
+       <a href="planets.html"><img src="img/fii.png"  height="320px" width="340px"></a>
+        </p>
+</div>
+
+<footer >
+    <p class="footer">
+    made by PROGRAMMERS ORBIT team
+    <br><br>@2024</p>
+</footer>
+</center>
+</div>
+    </body>
+
+</html>

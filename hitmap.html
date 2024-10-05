@@ -1,0 +1,279 @@
+<html>
+    <head>
+
+    </head>
+    <style>
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+body{
+    font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+    background: url(img/ground.jpg) no-repeat center center fixed; 
+    letter-spacing: 1.5px;
+    padding: 0%;
+    margin: 0%;
+    background-size: cover;
+    background-position: center;
+   }
+   .nav {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 540;
+     }
+        ul {
+            list-style-type: none;
+            display: flex; 
+        }
+        .item{
+            justify-content: space-between;
+            display: flex;
+            margin-left: 760px;
+            padding-top: 20px;
+        }
+        
+        li {
+            padding-top: 40px;
+            margin-left: 20px; 
+            margin-right: 10px;
+        }
+        .logo{
+          margin-left: 110px;
+          margin-top: 40px;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        a:hover {
+            color: blue;
+        }
+   
+.card {
+  margin-top: 200px;
+  width: 730px;
+  height: 70px;
+  background: #171717;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 3px 1px #00000088;
+  cursor: pointer;
+}
+.card .content {
+  border-radius: 5px;
+  background: #171717;
+  width: 730px;
+  height: 270px;
+  /*
+  width: 900px;
+  height: 400px;*/
+  z-index: 1;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content::before {
+  opacity: 0;
+  transition: opacity 300ms;
+  content: ' ';
+  display: block;
+  background: white;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  filter: blur(90px);
+}
+
+.card:hover .content::before {
+  opacity: 1;
+}
+
+.card::before {
+  opacity: 0;
+  content: ' ';
+  position: absolute;
+  display: block;
+  width: 600px;
+  height: 660px;
+  background: linear-gradient(90deg, transparent, #3a1597ce, #441b65, transparent);
+  transition: opacity 300ms;
+  animation: rotation_9018 3000ms infinite linear;
+  animation-play-state: paused;
+}
+.card:hover::before {
+  opacity: 1;
+  animation-play-state: running;
+}
+
+.card::after {
+  position: absolute;
+  content: ' ';
+  display: block;
+  width: 190px;
+  height: 254px;
+  background: #17171733;
+  backdrop-filter: blur(50px);
+}
+
+@keyframes rotation_9018 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.hitmap{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin-left: 20px; 
+    margin-right: 10px;
+}
+.hitmap img{
+margin-right: 180px;
+border-radius: 5%;
+}
+
+/*cadr 2*/
+.card2 {
+  width: 730px;
+  height: 270px;
+  background: #171717;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 3px 1px #00000088;
+  cursor: pointer;
+}
+.card2 .content2 {
+  padding-top: 160px;
+  border-radius: 5px;
+  background: #171717;
+  width: 890px;
+  height: 6px;
+  z-index: 1;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  color:rgb(255, 255, 255);
+  font-size: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+}
+.content2::before {
+  opacity: 0;
+  transition: opacity 300ms;
+  content: ' ';
+  display: block;
+  background: white;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  filter: blur(90px);
+}
+.card2:hover .content2::before {
+  opacity: 1;
+}
+.card2::before {
+  opacity: 0;
+  content: ' ';
+  position: absolute;
+  display: block;
+  width: 600px;
+  height: 660px;
+  background: linear-gradient(90deg, transparent, #3a159794, #441b6596, transparent);
+  transition: opacity 300ms;
+  animation: rotation_9018 3000ms infinite linear;
+  animation-play-state: paused;
+}
+/*
+.card2:hover::before {
+  opacity: 1;
+  animation-play-state: running;
+}
+*/
+.card2::after {
+  position: absolute;
+  content: ' ';
+  display: block;
+  width: 190px;
+  height: 140px;
+  background: #17171733;
+  backdrop-filter: blur(50px);
+}
+
+@keyframes rotation_9018 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+  
+}
+footer{
+    margin-top: 170px;
+    color:#fff;
+}
+.footer{
+  background: url(img/sidepic.png) no-repeat;
+    height: 110px;
+    background-position:center;
+    font-size: 14px;
+    font-weight: 700;
+    padding-top: 300px;
+}
+    </style>
+  <body>
+    <div class="nav">
+
+      <ul>
+          <spam class="logo"> <img src="img/logo.png" height="60px" width="60px"></spam>
+          <spam class="item">
+              <li><a href="https://www.nasa.gov/">NASA</a></li>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="planets.html">PLANTES</a></li>
+          </spam>
+      </ul>
+      </div>
+
+
+    <center>
+    <div class="box">
+        <div id="card" class="card">
+          <div class="content">
+            <span class="hitmap">
+                <img src="img/hitmap-removebg-preview.png" height="290px" width="290px">
+                <select>
+                    <option>2024</option>
+                </select>
+            </span> 
+          </div>
+        </div>
+        <div class="box">
+            <div id="card2" class="card2">
+                <div class="content2">
+                <p><per>
+        In May 2024, the Sun exhibited intense solar activity, particularly between May 10 and 14, with NASA's Solar Dynamics Observatory
+        (SDO) capturing numerous solar flares and coronal mass ejections (CMEs). These events resulted in some of the strongest solar storms
+        recorded in two decades. During this period, several powerful X-class flares were detected, with the largest reaching X8.7 on May 14, 2024.
+        The solar activity was so significant that it created widespread geomagnetic storms, resulting in brilliant auroras visible as far as 
+        the southern U.S. and northern India. The solar heat map of this period reflects the intense ultraviolet light emitted by these solar flares,
+        highlighting extremely hot material in the Sun's corona
+                </per></p>
+        </div></div></div> 
+    <footer>
+        <p class="footer">made by PROGRAMMERS ORBIT team
+        <br> <br>@2024</p>
+    </footer>
+    </center>
+    </div>
+  </body>
+</html>
